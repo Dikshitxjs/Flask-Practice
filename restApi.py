@@ -17,7 +17,7 @@ class Add(Resource):
 
 api.add_resource(Hello, '/')
 api.add_resource(Square, '/square/<int:num>')
-api.add_resource(Add,'/add/<int:num')
+api.add_resource(Add,'/add/<int:num>')
 
 if __name__ == '__main__':
     app.run(debug=True)

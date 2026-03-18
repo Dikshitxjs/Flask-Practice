@@ -77,6 +77,6 @@ def erase(id):
     return redirect('/')
 
 if __name__ == '__main__':
-    with app.app_context():  # Needed for DB operations outside a request
-        db.create_all()      # Creates the database and tables
+    with app.app_context():  
+        db.create_all()      
     app.run(debug=True)
